@@ -20,7 +20,7 @@ public class MainActivity2 extends AppCompatActivity {
     private Button btnMul;
     private TextView tvResult;
     private ImageView icon_plus2;
-
+//uyuiyuiyui
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
