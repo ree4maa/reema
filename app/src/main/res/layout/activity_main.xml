@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/icon_plus"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hello reema "
+        android:textColor="#034071"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bntGo"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5BC0E9"
+        android:onClick="onClick"
+        android:scrollbarSize="34dp"
+        android:text="press to go"
+        android:textSize="34sp"
+        app:cornerRadius="30dp" />
+
+    <EditText
+        android:id="@+id/etinput"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your input"
+        android:inputType="text"
+        android:textColor="#225FEB"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0B6CBA"
+        android:text="Next Screen"
+        android:textSize="20sp" />
+
+</LinearLayout>
