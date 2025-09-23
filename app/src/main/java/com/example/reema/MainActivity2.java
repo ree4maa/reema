@@ -21,7 +21,7 @@ public class MainActivity2 extends AppCompatActivity {
     private EditText etNum2;
     private Button btnMul;
     private TextView tvResult;
-    private ImageView icon_plus2;
+    private ImageView ivPlus;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +32,7 @@ public class MainActivity2 extends AppCompatActivity {
         etNum2 = findViewById(R.id.etNum2);
         btnMul = findViewById(R.id.btnMul);
         tvResult = findViewById(R.id.tvResult);
-        ImageView = findViewById(R.id.icon_plus2);
+        ivPlus = findViewById(R.id.ivPlus);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.icon_plus), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
