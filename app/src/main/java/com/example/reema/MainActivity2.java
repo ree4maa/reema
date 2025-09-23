@@ -1,6 +1,8 @@
 package com.example.reema;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,7 +22,6 @@ public class MainActivity2 extends AppCompatActivity {
     private Button btnMul;
     private TextView tvResult;
     private ImageView icon_plus2;
-//uyuiyuiyui
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,5 +57,18 @@ public class MainActivity2 extends AppCompatActivity {
         int result = n1 + n2;
         tvResult.setText(String.valueOf(result));
 
+    }
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+       if (item.getItemId()==R.id.itmSettings)
+       {
+       }
+       if (item.getItemId()==R.id.itmHistory)
+       {
+       }
+       return true;
     }
 }
