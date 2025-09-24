@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -65,9 +66,11 @@ public class MainActivity2 extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
        if (item.getItemId()==R.id.itmSettings)
        {
+           Toast.makeText(this, "i'm Settings", Toast.LENGTH_SHORT).show();
        }
        if (item.getItemId()==R.id.itmHistory)
        {
+           Toast.makeText(this, "i'm History", Toast.LENGTH_SHORT).show();
        }
        return true;
     }

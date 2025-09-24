@@ -32,11 +32,8 @@ public  class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onClick(View view) {
-        String input = et_Input.getText().toString();
-        tv_Output.setText(input);
-
-        Intent i=new Intent(MainActivity.this, MainActivity2.class);
+    public void onClick(View v) {
+        Intent i = new Intent(MainActivity.this, MainActivity2.class);
         startActivity(i);
 
     }
