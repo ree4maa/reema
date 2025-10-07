@@ -18,22 +18,20 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity2 extends AppCompatActivity {
     private EditText etNum1;
-    private TextView tvOp;
     private EditText etNum2;
-    private Button btnMul;
     private TextView tvResult;
-    private ImageView ivPlus;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main2);
         etNum1 = findViewById(R.id.etNum1);
-        tvOp = findViewById(R.id.tvOp);
+        TextView tvOp = findViewById(R.id.tvOp);
         etNum2 = findViewById(R.id.etNum2);
-        btnMul = findViewById(R.id.btnMul);
+        Button btnMul = findViewById(R.id.btnMul);
         tvResult = findViewById(R.id.tvResult);
-        ivPlus = findViewById(R.id.ivPlus);
+        ImageView ivPlus = findViewById(R.id.ivPlus);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.icon_plus), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
